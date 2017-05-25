@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_XLsn0wKit_swiftVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_XLsn0wKit_swiftVersionString[];
+FOUNDATION_EXPORT double Pods_XLsn0wVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_XLsn0wVersionString[];
 

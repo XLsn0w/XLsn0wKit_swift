@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3536A9661ED66BF200CD64F2"
-               BuildableName = "XLsn0wKit_swift.app"
-               BlueprintName = "XLsn0wKit_swift"
-               ReferencedContainer = "container:XLsn0wKit_swift.xcodeproj">
+               BlueprintIdentifier = "358B39D81ED68997000B410D"
+               BuildableName = "XLsn0w.app"
+               BlueprintName = "XLsn0w"
+               ReferencedContainer = "container:XLsn0w.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3536A9661ED66BF200CD64F2"
-            BuildableName = "XLsn0wKit_swift.app"
-            BlueprintName = "XLsn0wKit_swift"
-            ReferencedContainer = "container:XLsn0wKit_swift.xcodeproj">
+            BlueprintIdentifier = "358B39D81ED68997000B410D"
+            BuildableName = "XLsn0w.app"
+            BlueprintName = "XLsn0w"
+            ReferencedContainer = "container:XLsn0w.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3536A9661ED66BF200CD64F2"
-            BuildableName = "XLsn0wKit_swift.app"
-            BlueprintName = "XLsn0wKit_swift"
-            ReferencedContainer = "container:XLsn0wKit_swift.xcodeproj">
+            BlueprintIdentifier = "358B39D81ED68997000B410D"
+            BuildableName = "XLsn0w.app"
+            BlueprintName = "XLsn0w"
+            ReferencedContainer = "container:XLsn0w.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3536A9661ED66BF200CD64F2"
-            BuildableName = "XLsn0wKit_swift.app"
-            BlueprintName = "XLsn0wKit_swift"
-            ReferencedContainer = "container:XLsn0wKit_swift.xcodeproj">
+            BlueprintIdentifier = "358B39D81ED68997000B410D"
+            BuildableName = "XLsn0w.app"
+            BlueprintName = "XLsn0w"
+            ReferencedContainer = "container:XLsn0w.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -12,6 +12,36 @@ import Foundation
 import UIKit
 
 extension UIColor {
+    
+    class var JKThemColor_Yellow: UIColor {
+        get {
+            return UIColor.RGB(r: 254, g: 212, b: 48)!
+        }
+    }
+    
+    class var JKThemColor_Dark: UIColor {
+        get {
+            return UIColor.RGB(r: 32, g: 44, b: 61)!
+        }
+    }
+    
+    
+    class var JKThemColor_Light: UIColor {
+        get {
+            return UIColor.RGB(r: 116, g: 116, b: 116)!
+        }
+    }
+    
+    
+    class var JKThemColor_Mid: UIColor {
+        get {
+            return UIColor.RGB(r: 77, g: 77, b: 77)!
+        }
+    }
+    
+
+
+    
     class func RGB_Float(r:CGFloat,g:CGFloat,b:CGFloat) -> UIColor? {
         return UIColor.init(red: r, green: g, blue: b, alpha: 1.0)
     }

@@ -3,7 +3,7 @@ platform :ios, ‘8.0’
 
 use_frameworks! 
 
-target ‘XLsn0wKit_swift’ do
+target ‘XLsn0w’ do
     
     pod 'SnapKit'    #纯代码布局库
     pod 'Kingfisher' #图片缓存库

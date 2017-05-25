@@ -1,13 +1,12 @@
-/*********************************************************************************************
- *   __      __   _         _________     _ _     _    _________   __         _         __   *
- *	 \ \    / /  | |        | _______|   | | \   | |  |  ______ |  \ \       / \       / /   *
- *	  \ \  / /   | |        | |          | |\ \  | |  | |     | |   \ \     / \ \     / /    *
- *     \ \/ /    | |        | |______    | | \ \ | |  | |     | |    \ \   / / \ \   / /     *
- *     /\/\/\    | |        |_______ |   | |  \ \| |  | |     | |     \ \ / /   \ \ / /      *
- *    / /  \ \   | |______   ______| |   | |   \ \ |  | |_____| |      \ \ /     \ \ /       *
- *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
- *                                                                                           *
- *********************************************************************************************/
+//
+//  UIImageExtension.swift
+//  XLsn0wKit_swift
+//
+//  Created by XLsn0w on 2017/5/25.
+//  Copyright © 2017年 XLsn0w. All rights reserved.
+//
+
+import Foundation
 import UIKit
 
 enum UIImageContentMode: Int {
@@ -62,16 +61,23 @@ extension UIImage {
     }
     
     /// 重新绘制对应大小的图片
-    func resize(withSize size: CGSize) -> UIImage {
-        return self.resize(withSize: size, contentModel: .scaleToFill)
+    func resize(withSize size: CGSize, isOpaque: Bool) -> UIImage {
+        return self.resize(withSize: size, contentModel: .scaleToFill, isOpaque: isOpaque)
     }
     
     
     /// 重新绘制对应大小的图片
-    func resize(withSize size: CGSize, contentModel: UIImageContentMode) -> UIImage {
+    func resize(withSize size: CGSize, contentModel: UIImageContentMode, isOpaque: Bool) -> UIImage {
         var scale = UIScreen.main.scale
         let targetSize = CGSize.init(width: size.width * scale, height: size.height * scale)
         UIGraphicsBeginImageContext(targetSize)
+        
+        if isOpaque == true {
+            UIColor.init(red: 254.0 / 255.0, green: 212.0 / 255.0, blue: 48.0 / 255.0, alpha: 1).setFill()
+            let rect = CGRect.init(origin: CGPoint.init(x: 0, y: 0), size: targetSize)
+            UIRectFill(rect)
+        }
+        
         var bounds = CGRect.zero
         switch contentModel {
         case .scaleToFill:
@@ -101,9 +107,9 @@ extension UIImage {
             break
             
         case .bottom:
-                scale = self.size.width / self.size.height
-                bounds.size = CGSize.init(width: targetSize.width, height: targetSize.width * scale)
-                bounds.origin.y = targetSize.height - bounds.size.height
+            scale = self.size.width / self.size.height
+            bounds.size = CGSize.init(width: targetSize.width, height: targetSize.width * scale)
+            bounds.origin.y = targetSize.height - bounds.size.height
             break
         }
         
@@ -246,4 +252,37 @@ extension UIImage {
         
         return newImage!
     }
+    
+    
+    
+    
+    
+    /// 彩色+保留Alpha通道
+    func image(withTintColor color:UIColor) -> UIImage {
+        return self.image(withTintColor: color, blendMode: .destinationIn)
+    }
+    
+    /// 灰色图片
+    func image(withGradientTintColor color: UIColor) -> UIImage {
+        return self.image(withTintColor: color, blendMode: .overlay)
+    }
+    
+    /// 二次修改图片的TintColor
+    func image(withTintColor tintColor:UIColor, blendMode:CGBlendMode) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(self.size, false, 0.0)
+        tintColor.setFill()
+        let bounds = CGRect.init(origin: CGPoint.zero, size: self.size)
+        UIRectFill(bounds)
+        
+        self.draw(in: bounds, blendMode: blendMode, alpha: 1.0)
+        
+        if blendMode != .destinationIn {
+            self.draw(in: bounds, blendMode: .destinationIn, alpha: 1.0)
+        }
+        
+        let tintedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return tintedImage!
+    }
+    
 }

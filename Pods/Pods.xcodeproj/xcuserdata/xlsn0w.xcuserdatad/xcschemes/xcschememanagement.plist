@@ -14,7 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-XLsn0wKit_swift.xcscheme</key>
+		<key>Pods-XLsn0w.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,12 +37,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>05B6CD5249A064D8DFAEEC2E8DE375C8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>16254C635CA3D3271B4B0AFD548A5CE9</key>
+		<key>6CFC2650DA7BB5CF8C07CD485BA2EFAA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,17 +47,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A3AB6917C58F852811A9021C61A7CE7B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>C4944FEC314D1A66588651D006273ADE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C87E3B8CA36962A1E09F4D4114347D43</key>
+		<key>CCB6F1B2CD4ABC0D1888B36F129167F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D862369290ED4E779AA4F063DDB326EC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EEDC7304664890C9572BA8846CAAEEDA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
