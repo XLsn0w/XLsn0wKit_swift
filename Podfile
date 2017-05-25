@@ -1,0 +1,14 @@
+
+platform :ios, ‘8.0’
+
+use_frameworks! 
+
+target ‘XLsn0wKit_swift’ do
+    
+    pod 'SnapKit'    #纯代码布局库
+    pod 'Kingfisher' #图片缓存库
+    pod 'Alamofire'  #网络解析库
+  
+
+    
+end
