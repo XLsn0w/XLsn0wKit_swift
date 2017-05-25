@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
 
   s.name         = "XLsn0wKit_swift"
   s.homepage     = "https://github.com/XLsn0w/XLsn0wKit_swift"

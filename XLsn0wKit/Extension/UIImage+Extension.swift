@@ -39,7 +39,7 @@ extension UIImage {
         let context = UIGraphicsGetCurrentContext()
         let radius = size.width * 0.5
         let center = CGPoint.init(x: radius, y: radius)
-        context?.addArc(center: center, radius: radius, startAngle: 0, endAngle: CGFloat(M_PI) * 2.0, clockwise: true)
+        context?.addArc(center: center, radius: radius, startAngle: 0, endAngle: CGFloat(Double.pi) * 2.0, clockwise: true)
         context?.closePath()
         context?.clip()
         context?.translateBy(x: 0, y: size.height)

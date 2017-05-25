@@ -103,12 +103,12 @@ class XLsn0wNetwork {
         .validate(contentType: ["application/json"])
         
         .responseJSON { response in
-            
-            print(response.request)  // original URL request
-            
-            print(response.response) // URL response
-            
-            print(response.data)    // server data
+             print(response)
+//            print(response.request)  // original URL request
+//            
+//            print(response.response) // URL response
+//            
+//            print(response.data)    // server data
             
             print(response.result)  // result of response serialization
             

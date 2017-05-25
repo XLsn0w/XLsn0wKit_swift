@@ -38,20 +38,6 @@
 		3536A9DD1ED66C0200CD64F2 /* XLsn0wViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9B11ED66C0200CD64F2 /* XLsn0wViewController.swift */; };
 		3536A9E41ED66C9500CD64F2 /* XLsn0wKit_swift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3536A9E31ED66C9500CD64F2 /* XLsn0wKit_swift.podspec */; };
 		3536A9E71ED66CF900CD64F2 /* XLsn0wLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9E61ED66CF900CD64F2 /* XLsn0wLog.swift */; };
-		3536A9F91ED66E1B00CD64F2 /* CNAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9EA1ED66E1B00CD64F2 /* CNAnimationViewController.swift */; };
-		3536A9FA1ED66E1B00CD64F2 /* CNGeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9EB1ED66E1B00CD64F2 /* CNGeneralViewController.swift */; };
-		3536A9FB1ED66E1B00CD64F2 /* CNLayoutAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9EC1ED66E1B00CD64F2 /* CNLayoutAnchorViewController.swift */; };
-		3536A9FC1ED66E1B00CD64F2 /* CNLayoutGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9ED1ED66E1B00CD64F2 /* CNLayoutGuideViewController.swift */; };
-		3536A9FD1ED66E1B00CD64F2 /* CodeNativeLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9EE1ED66E1B00CD64F2 /* CodeNativeLayoutViewController.swift */; };
-		3536A9FE1ED66E1B00CD64F2 /* SKAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9F01ED66E1B00CD64F2 /* SKAnimationViewController.swift */; };
-		3536A9FF1ED66E1B00CD64F2 /* SKGeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9F11ED66E1B00CD64F2 /* SKGeneralViewController.swift */; };
-		3536AA001ED66E1B00CD64F2 /* SKHugCompressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9F21ED66E1B00CD64F2 /* SKHugCompressViewController.swift */; };
-		3536AA011ED66E1B00CD64F2 /* SKLayoutGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9F31ED66E1B00CD64F2 /* SKLayoutGuideViewController.swift */; };
-		3536AA021ED66E1B00CD64F2 /* SKScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9F41ED66E1B00CD64F2 /* SKScrollViewController.swift */; };
-		3536AA031ED66E1B00CD64F2 /* SKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9F51ED66E1B00CD64F2 /* SKTableViewCell.swift */; };
-		3536AA041ED66E1B00CD64F2 /* SKTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9F61ED66E1B00CD64F2 /* SKTableViewCellModel.swift */; };
-		3536AA051ED66E1B00CD64F2 /* SKTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9F71ED66E1B00CD64F2 /* SKTableViewController.swift */; };
-		3536AA061ED66E1B00CD64F2 /* SnapKitLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A9F81ED66E1B00CD64F2 /* SnapKitLayoutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,20 +73,6 @@
 		3536A9B11ED66C0200CD64F2 /* XLsn0wViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wViewController.swift; sourceTree = "<group>"; };
 		3536A9E31ED66C9500CD64F2 /* XLsn0wKit_swift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XLsn0wKit_swift.podspec; sourceTree = "<group>"; };
 		3536A9E61ED66CF900CD64F2 /* XLsn0wLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wLog.swift; sourceTree = "<group>"; };
-		3536A9EA1ED66E1B00CD64F2 /* CNAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNAnimationViewController.swift; sourceTree = "<group>"; };
-		3536A9EB1ED66E1B00CD64F2 /* CNGeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNGeneralViewController.swift; sourceTree = "<group>"; };
-		3536A9EC1ED66E1B00CD64F2 /* CNLayoutAnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNLayoutAnchorViewController.swift; sourceTree = "<group>"; };
-		3536A9ED1ED66E1B00CD64F2 /* CNLayoutGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNLayoutGuideViewController.swift; sourceTree = "<group>"; };
-		3536A9EE1ED66E1B00CD64F2 /* CodeNativeLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeNativeLayoutViewController.swift; sourceTree = "<group>"; };
-		3536A9F01ED66E1B00CD64F2 /* SKAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKAnimationViewController.swift; sourceTree = "<group>"; };
-		3536A9F11ED66E1B00CD64F2 /* SKGeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKGeneralViewController.swift; sourceTree = "<group>"; };
-		3536A9F21ED66E1B00CD64F2 /* SKHugCompressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKHugCompressViewController.swift; sourceTree = "<group>"; };
-		3536A9F31ED66E1B00CD64F2 /* SKLayoutGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKLayoutGuideViewController.swift; sourceTree = "<group>"; };
-		3536A9F41ED66E1B00CD64F2 /* SKScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKScrollViewController.swift; sourceTree = "<group>"; };
-		3536A9F51ED66E1B00CD64F2 /* SKTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTableViewCell.swift; sourceTree = "<group>"; };
-		3536A9F61ED66E1B00CD64F2 /* SKTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTableViewCellModel.swift; sourceTree = "<group>"; };
-		3536A9F71ED66E1B00CD64F2 /* SKTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTableViewController.swift; sourceTree = "<group>"; };
-		3536A9F81ED66E1B00CD64F2 /* SnapKitLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitLayoutViewController.swift; sourceTree = "<group>"; };
 		6BA893ABBBA53C2801232211 /* Pods_XLsn0wKit_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLsn0wKit_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		973EABE6B0284C8D2A5B4361 /* Pods-XLsn0wKit_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wKit_swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wKit_swift/Pods-XLsn0wKit_swift.debug.xcconfig"; sourceTree = "<group>"; };
 		BCFEC8B19F498DE5C6EEC57C /* Pods-XLsn0wKit_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wKit_swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wKit_swift/Pods-XLsn0wKit_swift.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				3536A9E31ED66C9500CD64F2 /* XLsn0wKit_swift.podspec */,
-				3536A9E81ED66E1B00CD64F2 /* Layout */,
 				3536A9E51ED66CF900CD64F2 /* XLsn0wLog */,
 				3536A9831ED66C0200CD64F2 /* Extension */,
 				3536A99E1ED66C0200CD64F2 /* XLsn0wMacro */,
@@ -229,43 +200,6 @@
 				3536A9E61ED66CF900CD64F2 /* XLsn0wLog.swift */,
 			);
 			path = XLsn0wLog;
-			sourceTree = "<group>";
-		};
-		3536A9E81ED66E1B00CD64F2 /* Layout */ = {
-			isa = PBXGroup;
-			children = (
-				3536A9E91ED66E1B00CD64F2 /* CodeNativeLayout */,
-				3536A9EF1ED66E1B00CD64F2 /* SnapKitLayout */,
-			);
-			path = Layout;
-			sourceTree = "<group>";
-		};
-		3536A9E91ED66E1B00CD64F2 /* CodeNativeLayout */ = {
-			isa = PBXGroup;
-			children = (
-				3536A9EA1ED66E1B00CD64F2 /* CNAnimationViewController.swift */,
-				3536A9EB1ED66E1B00CD64F2 /* CNGeneralViewController.swift */,
-				3536A9EC1ED66E1B00CD64F2 /* CNLayoutAnchorViewController.swift */,
-				3536A9ED1ED66E1B00CD64F2 /* CNLayoutGuideViewController.swift */,
-				3536A9EE1ED66E1B00CD64F2 /* CodeNativeLayoutViewController.swift */,
-			);
-			path = CodeNativeLayout;
-			sourceTree = "<group>";
-		};
-		3536A9EF1ED66E1B00CD64F2 /* SnapKitLayout */ = {
-			isa = PBXGroup;
-			children = (
-				3536A9F01ED66E1B00CD64F2 /* SKAnimationViewController.swift */,
-				3536A9F11ED66E1B00CD64F2 /* SKGeneralViewController.swift */,
-				3536A9F21ED66E1B00CD64F2 /* SKHugCompressViewController.swift */,
-				3536A9F31ED66E1B00CD64F2 /* SKLayoutGuideViewController.swift */,
-				3536A9F41ED66E1B00CD64F2 /* SKScrollViewController.swift */,
-				3536A9F51ED66E1B00CD64F2 /* SKTableViewCell.swift */,
-				3536A9F61ED66E1B00CD64F2 /* SKTableViewCellModel.swift */,
-				3536A9F71ED66E1B00CD64F2 /* SKTableViewController.swift */,
-				3536A9F81ED66E1B00CD64F2 /* SnapKitLayoutViewController.swift */,
-			);
-			path = SnapKitLayout;
 			sourceTree = "<group>";
 		};
 		6A7939163A064D99271B056C /* Pods */ = {
@@ -413,40 +347,26 @@
 				3536A9BE1ED66C0200CD64F2 /* UIColor-Extension.swift in Sources */,
 				3536A9C41ED66C0200CD64F2 /* UIWindow+Extension.swift in Sources */,
 				3536A9DB1ED66C0200CD64F2 /* ToastWindow.swift in Sources */,
-				3536A9FD1ED66E1B00CD64F2 /* CodeNativeLayoutViewController.swift in Sources */,
 				3536A9BA1ED66C0200CD64F2 /* String+Extension.swift in Sources */,
 				3536A96D1ED66BF200CD64F2 /* ViewController.swift in Sources */,
-				3536A9FC1ED66E1B00CD64F2 /* CNLayoutGuideViewController.swift in Sources */,
 				3536A9CF1ED66C0200CD64F2 /* XLsn0wMacro.swift in Sources */,
-				3536A9F91ED66E1B00CD64F2 /* CNAnimationViewController.swift in Sources */,
 				3536A9D01ED66C0200CD64F2 /* WRApiContainer.swift in Sources */,
-				3536AA041ED66E1B00CD64F2 /* SKTableViewCellModel.swift in Sources */,
 				3536A9D11ED66C0200CD64F2 /* WRNetWrapper.swift in Sources */,
-				3536A9FA1ED66E1B00CD64F2 /* CNGeneralViewController.swift in Sources */,
-				3536AA001ED66E1B00CD64F2 /* SKHugCompressViewController.swift in Sources */,
 				3536A9D91ED66C0200CD64F2 /* ToastCenter.swift in Sources */,
 				3536A9C31ED66C0200CD64F2 /* UIViewFrame+Extension.swift in Sources */,
 				3536A9C21ED66C0200CD64F2 /* UIView+Event.swift in Sources */,
 				3536A9DD1ED66C0200CD64F2 /* XLsn0wViewController.swift in Sources */,
 				3536A9DC1ED66C0200CD64F2 /* XLsn0wToast.swift in Sources */,
-				3536AA011ED66E1B00CD64F2 /* SKLayoutGuideViewController.swift in Sources */,
 				3536A9BD1ED66C0200CD64F2 /* UIColor+Extension.swift in Sources */,
-				3536A9FB1ED66E1B00CD64F2 /* CNLayoutAnchorViewController.swift in Sources */,
 				3536A9C11ED66C0200CD64F2 /* UISearchBar+Extension.swift in Sources */,
-				3536AA021ED66E1B00CD64F2 /* SKScrollViewController.swift in Sources */,
-				3536AA031ED66E1B00CD64F2 /* SKTableViewCell.swift in Sources */,
 				3536A9E71ED66CF900CD64F2 /* XLsn0wLog.swift in Sources */,
 				3536A96B1ED66BF200CD64F2 /* AppDelegate.swift in Sources */,
-				3536A9FE1ED66E1B00CD64F2 /* SKAnimationViewController.swift in Sources */,
 				3536A9B71ED66C0200CD64F2 /* Array+Extension.swift in Sources */,
 				3536A9C01ED66C0200CD64F2 /* UIImage+Extension.swift in Sources */,
 				3536A9DA1ED66C0200CD64F2 /* ToastView.swift in Sources */,
 				3536A9BB1ED66C0200CD64F2 /* UIApplication+Extension.swift in Sources */,
-				3536AA061ED66E1B00CD64F2 /* SnapKitLayoutViewController.swift in Sources */,
-				3536AA051ED66E1B00CD64F2 /* SKTableViewController.swift in Sources */,
 				3536A9D21ED66C0200CD64F2 /* XLsn0wNetwork.swift in Sources */,
 				3536A9BF1ED66C0200CD64F2 /* UIColorHex.swift in Sources */,
-				3536A9FF1ED66E1B00CD64F2 /* SKGeneralViewController.swift in Sources */,
 				3536A9B81ED66C0200CD64F2 /* FileManager+Extension.swift in Sources */,
 				3536A9BC1ED66C0200CD64F2 /* UIBarButtonItem+Extension.swift in Sources */,
 			);
