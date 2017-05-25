@@ -16,4 +16,16 @@ Pod::Spec.new do |s|
 
   s.source_files = "XLsn0wKit/**/*.swift"
 
+
+# s.resources             = "XLsn0w/Resources/XLsn0wKit.bundle"
+# s.libraries             = 'z', 'sqlite3'
+
+  s.frameworks            = 'UIKit', 'Foundation'
+
+  s.dependency 'SnapKit'
+  s.dependency 'Kingfisher'
+  s.dependency 'Alamofire'
+  s.dependency 'SwiftyJSON'
+  s.dependency 'Then'
+
 end

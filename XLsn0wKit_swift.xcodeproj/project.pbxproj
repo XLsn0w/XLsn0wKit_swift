@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1176EAE9A037E9E551D8C36E /* Pods_XLsn0wKit_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA893ABBBA53C2801232211 /* Pods_XLsn0wKit_swift.framework */; };
 		3536A96B1ED66BF200CD64F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A96A1ED66BF200CD64F2 /* AppDelegate.swift */; };
 		3536A96D1ED66BF200CD64F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A96C1ED66BF200CD64F2 /* ViewController.swift */; };
 		3536A9701ED66BF200CD64F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3536A96E1ED66BF200CD64F2 /* Main.storyboard */; };
@@ -100,6 +101,9 @@
 		3536A9F61ED66E1B00CD64F2 /* SKTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTableViewCellModel.swift; sourceTree = "<group>"; };
 		3536A9F71ED66E1B00CD64F2 /* SKTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTableViewController.swift; sourceTree = "<group>"; };
 		3536A9F81ED66E1B00CD64F2 /* SnapKitLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitLayoutViewController.swift; sourceTree = "<group>"; };
+		6BA893ABBBA53C2801232211 /* Pods_XLsn0wKit_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLsn0wKit_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		973EABE6B0284C8D2A5B4361 /* Pods-XLsn0wKit_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wKit_swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wKit_swift/Pods-XLsn0wKit_swift.debug.xcconfig"; sourceTree = "<group>"; };
+		BCFEC8B19F498DE5C6EEC57C /* Pods-XLsn0wKit_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wKit_swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wKit_swift/Pods-XLsn0wKit_swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1176EAE9A037E9E551D8C36E /* Pods_XLsn0wKit_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +124,8 @@
 				3536A97C1ED66C0200CD64F2 /* XLsn0wKit */,
 				3536A9691ED66BF200CD64F2 /* XLsn0wKit_swift */,
 				3536A9681ED66BF200CD64F2 /* Products */,
+				6A7939163A064D99271B056C /* Pods */,
+				9297114F79676A33E950D0D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,6 +268,23 @@
 			path = SnapKitLayout;
 			sourceTree = "<group>";
 		};
+		6A7939163A064D99271B056C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				973EABE6B0284C8D2A5B4361 /* Pods-XLsn0wKit_swift.debug.xcconfig */,
+				BCFEC8B19F498DE5C6EEC57C /* Pods-XLsn0wKit_swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9297114F79676A33E950D0D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BA893ABBBA53C2801232211 /* Pods_XLsn0wKit_swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,9 +292,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3536A9791ED66BF200CD64F2 /* Build configuration list for PBXNativeTarget "XLsn0wKit_swift" */;
 			buildPhases = (
+				4C545CA099419866BEB948F7 /* [CP] Check Pods Manifest.lock */,
 				3536A9631ED66BF200CD64F2 /* Sources */,
 				3536A9641ED66BF200CD64F2 /* Frameworks */,
 				3536A9651ED66BF200CD64F2 /* Resources */,
+				2685D7FA1AB213F4EF788403 /* [CP] Embed Pods Frameworks */,
+				EDBCED20262E76EB965F6060 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,6 +355,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2685D7FA1AB213F4EF788403 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XLsn0wKit_swift/Pods-XLsn0wKit_swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C545CA099419866BEB948F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EDBCED20262E76EB965F6060 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XLsn0wKit_swift/Pods-XLsn0wKit_swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3536A9631ED66BF200CD64F2 /* Sources */ = {
@@ -494,9 +569,11 @@
 		};
 		3536A97A1ED66BF200CD64F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 973EABE6B0284C8D2A5B4361 /* Pods-XLsn0wKit_swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XLsn0wKit_swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xlsn0w.XLsn0wKit-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -506,9 +583,11 @@
 		};
 		3536A97B1ED66BF200CD64F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCFEC8B19F498DE5C6EEC57C /* Pods-XLsn0wKit_swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XLsn0wKit_swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xlsn0w.XLsn0wKit-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -535,6 +614,7 @@
 				3536A97B1ED66BF200CD64F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
