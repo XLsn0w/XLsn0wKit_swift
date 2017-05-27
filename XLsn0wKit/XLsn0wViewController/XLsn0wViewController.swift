@@ -1,11 +1,13 @@
-//
-//  XLsn0wViewController.swift
-//  XLsn0wQuora
-//
-//  Created by XLsn0w on 2017/5/24.
-//  Copyright © 2017年 XLsn0w. All rights reserved.
-//
-
+/*********************************************************************************************
+ *   __      __   _         _________     _ _     _    _________   __         _         __   *
+ *	 \ \    / /  | |        | _______|   | | \   | |  |  ______ |  \ \       / \       / /   *
+ *	  \ \  / /   | |        | |          | |\ \  | |  | |     | |   \ \     / \ \     / /    *
+ *     \ \/ /    | |        | |______    | | \ \ | |  | |     | |    \ \   / / \ \   / /     *
+ *     /\/\/\    | |        |_______ |   | |  \ \| |  | |     | |     \ \ / /   \ \ / /      *
+ *    / /  \ \   | |______   ______| |   | |   \ \ |  | |_____| |      \ \ /     \ \ /       *
+ *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
+ *                                                                                           *
+ *********************************************************************************************/
 import UIKit
 
 class XLsn0wViewController: UIViewController {
@@ -17,13 +19,9 @@ class XLsn0wViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    lazy var dataArray = { return [AnyObject]() }()
-
-    
-    deinit {//在Swift中, 有一个类似dealloc方法, 就是deinit, deinit是在实例不再引用的自动调用, 并且不用手动去管理引用计数
-        NSLog("\(self.classForCoder)已释放")
-    }
-    
+    lazy var dataArray = {
+        return [AnyObject]()
+    }()
     
     open func jk_pushViewController(viewController: UIViewController) -> Void {
         self.navigationController?.pushViewController(viewController, animated: true)
@@ -38,15 +36,18 @@ class XLsn0wViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    deinit {//在Swift中, 有一个类似dealloc方法, 就是deinit, deinit是在实例不再引用的自动调用, 并且不用手动去管理引用计数
+        NSLog("\(self.classForCoder)已释放")
     }
-    */
-
+    
 }
+/*********************************************************************************************
+ *   __      __   _         _________     _ _     _    _________   __         _         __   *
+ *	 \ \    / /  | |        | _______|   | | \   | |  |  ______ |  \ \       / \       / /   *
+ *	  \ \  / /   | |        | |          | |\ \  | |  | |     | |   \ \     / \ \     / /    *
+ *     \ \/ /    | |        | |______    | | \ \ | |  | |     | |    \ \   / / \ \   / /     *
+ *     /\/\/\    | |        |_______ |   | |  \ \| |  | |     | |     \ \ / /   \ \ / /      *
+ *    / /  \ \   | |______   ______| |   | |   \ \ |  | |_____| |      \ \ /     \ \ /       *
+ *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
+ *                                                                                           *
+ *********************************************************************************************/

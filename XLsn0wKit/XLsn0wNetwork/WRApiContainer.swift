@@ -13,8 +13,7 @@ import Alamofire
 
 let BaseURL:String = "http://news-at.zhihu.com/api/"
 
-class WRApiContainer: NSObject
-{
+class WRApiContainer: NSObject {
     /// 根据知乎日报二次封装的一个网络请求
     ///
     /// - Parameters:

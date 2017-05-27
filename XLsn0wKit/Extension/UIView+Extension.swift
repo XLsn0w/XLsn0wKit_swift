@@ -15,10 +15,70 @@ fileprivate let kTapGentureKey       = UnsafeRawPointer(bitPattern: "kTapGenture
 fileprivate let kTapGentureActionKey = UnsafeRawPointer(bitPattern: "kTapGentureActionKey".hashValue)
 
 // MARK: - 轻点事件
-extension UIView
-{
-    func setTapActionWithBlock(tapBlock:(()->()))
-    {
+extension UIView {
+    
+    var xl_height:CGFloat{
+        get{
+            return self.frame.height
+        }
+        set(newValue){
+            var frame = self.frame
+            frame.size.height = newValue
+            self.frame = frame
+        }
+    }
+    var xl_width:CGFloat{
+        get{
+            return self.frame.width
+        }
+        set(newValue){
+            var frame = self.frame
+            frame.size.width = newValue
+            self.frame = frame
+        }
+    }
+    var xl_x:CGFloat{
+        get{
+            return self.frame.origin.x
+        }
+        set(newValue){
+            var frame = self.frame
+            frame.origin.x = newValue
+            self.frame = frame
+        }
+    }
+    var xl_y:CGFloat{
+        get{
+            return self.frame.origin.y
+        }
+        set(newValue){
+            var frame = self.frame
+            frame.origin.y = newValue
+            self.frame = frame
+        }
+    }
+    var xl_centerX:CGFloat{
+        get{
+            return self.center.x
+        }
+        set(newValue){
+            var center = self.center
+            center.x = newValue
+            self.center = center
+        }
+    }
+    var xl_centerY:CGFloat{
+        get{
+            return self.center.y
+        }
+        set(newValue){
+            var center = self.center
+            center.y = newValue
+            self.center = center
+        }
+    }
+    
+    func setTapActionWithBlock(tapBlock:(()->())) {
         let tapGesture = objc_getAssociatedObject(self, kTapGentureKey)
         if (tapGesture == nil)
         {
