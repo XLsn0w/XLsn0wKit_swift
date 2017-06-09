@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		350C85F51EEA2A3000FED4AB /* XLsn0wRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C85F41EEA2A3000FED4AB /* XLsn0wRequest.swift */; };
 		350C85F81EEA2D9E00FED4AB /* XLsn0wPrivateMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C85F71EEA2D9E00FED4AB /* XLsn0wPrivateMacro.swift */; };
-		353578E51ED9055700B5B51F /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353578E41ED9055700B5B51F /* NSDate+Extension.swift */; };
+		353578E51ED9055700B5B51F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353578E41ED9055700B5B51F /* Date+Extension.swift */; };
 		353578EC1ED906CE00B5B51F /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353578EA1ED906CE00B5B51F /* UITableView+Extension.swift */; };
 		353578ED1ED906CE00B5B51F /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353578EB1ED906CE00B5B51F /* NSObject+Extension.swift */; };
 		358B39DD1ED68997000B410D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B39DC1ED68997000B410D /* AppDelegate.swift */; };
@@ -17,7 +17,7 @@
 		358B39E21ED68997000B410D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358B39E01ED68997000B410D /* Main.storyboard */; };
 		358B39E41ED68997000B410D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 358B39E31ED68997000B410D /* Assets.xcassets */; };
 		358B39E71ED68997000B410D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358B39E51ED68997000B410D /* LaunchScreen.storyboard */; };
-		358B3A141ED6899E000B410D /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 358B39F11ED6899E000B410D /* test.html */; };
+		358B3A141ED6899E000B410D /* WebViewTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 358B39F11ED6899E000B410D /* WebViewTest.html */; };
 		358B3A151ED6899E000B410D /* XLsn0wWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B39F21ED6899E000B410D /* XLsn0wWebViewController.swift */; };
 		358B3A161ED6899E000B410D /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B39F41ED6899E000B410D /* Array+Extension.swift */; };
 		358B3A171ED6899E000B410D /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B39F51ED6899E000B410D /* FileManager+Extension.swift */; };
@@ -29,7 +29,6 @@
 		358B3A1F1ED6899E000B410D /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B39FD1ED6899E000B410D /* UIImage+Extension.swift */; };
 		358B3A201ED6899E000B410D /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B39FE1ED6899E000B410D /* UISearchBar+Extension.swift */; };
 		358B3A211ED6899E000B410D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B39FF1ED6899E000B410D /* UIView+Extension.swift */; };
-		358B3A221ED6899E000B410D /* UIViewFrame+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B3A001ED6899E000B410D /* UIViewFrame+Extension.swift */; };
 		358B3A231ED6899E000B410D /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B3A011ED6899E000B410D /* UIWindow+Extension.swift */; };
 		358B3A241ED6899E000B410D /* XLsn0wKit_swift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 358B3A021ED6899E000B410D /* XLsn0wKit_swift.podspec */; };
 		358B3A251ED6899E000B410D /* XLsn0wLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B3A041ED6899E000B410D /* XLsn0wLog.swift */; };
@@ -47,7 +46,7 @@
 /* Begin PBXFileReference section */
 		350C85F41EEA2A3000FED4AB /* XLsn0wRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wRequest.swift; sourceTree = "<group>"; };
 		350C85F71EEA2D9E00FED4AB /* XLsn0wPrivateMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wPrivateMacro.swift; sourceTree = "<group>"; };
-		353578E41ED9055700B5B51F /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		353578E41ED9055700B5B51F /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		353578EA1ED906CE00B5B51F /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		353578EB1ED906CE00B5B51F /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		358B39D91ED68997000B410D /* XLsn0w.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0w.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +56,7 @@
 		358B39E31ED68997000B410D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		358B39E61ED68997000B410D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		358B39E81ED68997000B410D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		358B39F11ED6899E000B410D /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		358B39F11ED6899E000B410D /* WebViewTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WebViewTest.html; sourceTree = "<group>"; };
 		358B39F21ED6899E000B410D /* XLsn0wWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wWebViewController.swift; sourceTree = "<group>"; };
 		358B39F41ED6899E000B410D /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		358B39F51ED6899E000B410D /* FileManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
@@ -69,7 +68,6 @@
 		358B39FD1ED6899E000B410D /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		358B39FE1ED6899E000B410D /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extension.swift"; sourceTree = "<group>"; };
 		358B39FF1ED6899E000B410D /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		358B3A001ED6899E000B410D /* UIViewFrame+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewFrame+Extension.swift"; sourceTree = "<group>"; };
 		358B3A011ED6899E000B410D /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		358B3A021ED6899E000B410D /* XLsn0wKit_swift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XLsn0wKit_swift.podspec; sourceTree = "<group>"; };
 		358B3A041ED6899E000B410D /* XLsn0wLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wLog.swift; sourceTree = "<group>"; };
@@ -165,7 +163,7 @@
 		358B39F01ED6899E000B410D /* WebViewController */ = {
 			isa = PBXGroup;
 			children = (
-				358B39F11ED6899E000B410D /* test.html */,
+				358B39F11ED6899E000B410D /* WebViewTest.html */,
 				358B39F21ED6899E000B410D /* XLsn0wWebViewController.swift */,
 			);
 			path = WebViewController;
@@ -176,7 +174,7 @@
 			children = (
 				353578EA1ED906CE00B5B51F /* UITableView+Extension.swift */,
 				353578EB1ED906CE00B5B51F /* NSObject+Extension.swift */,
-				353578E41ED9055700B5B51F /* NSDate+Extension.swift */,
+				353578E41ED9055700B5B51F /* Date+Extension.swift */,
 				358B39F41ED6899E000B410D /* Array+Extension.swift */,
 				358B39F51ED6899E000B410D /* FileManager+Extension.swift */,
 				358B39F61ED6899E000B410D /* NotificationName+Extension.swift */,
@@ -187,7 +185,6 @@
 				358B39FD1ED6899E000B410D /* UIImage+Extension.swift */,
 				358B39FE1ED6899E000B410D /* UISearchBar+Extension.swift */,
 				358B39FF1ED6899E000B410D /* UIView+Extension.swift */,
-				358B3A001ED6899E000B410D /* UIViewFrame+Extension.swift */,
 				358B3A011ED6899E000B410D /* UIWindow+Extension.swift */,
 			);
 			path = Extension;
@@ -317,7 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				358B3A141ED6899E000B410D /* test.html in Resources */,
+				358B3A141ED6899E000B410D /* WebViewTest.html in Resources */,
 				358B39E71ED68997000B410D /* LaunchScreen.storyboard in Resources */,
 				358B39E41ED68997000B410D /* Assets.xcassets in Resources */,
 				358B3A241ED6899E000B410D /* XLsn0wKit_swift.podspec in Resources */,
@@ -384,10 +381,9 @@
 				358B3A2F1ED6899E000B410D /* XLsn0wViewController.swift in Sources */,
 				358B3A211ED6899E000B410D /* UIView+Extension.swift in Sources */,
 				358B3A151ED6899E000B410D /* XLsn0wWebViewController.swift in Sources */,
-				353578E51ED9055700B5B51F /* NSDate+Extension.swift in Sources */,
+				353578E51ED9055700B5B51F /* Date+Extension.swift in Sources */,
 				358B3A2D1ED6899E000B410D /* ToastWindow.swift in Sources */,
 				350C85F51EEA2A3000FED4AB /* XLsn0wRequest.swift in Sources */,
-				358B3A221ED6899E000B410D /* UIViewFrame+Extension.swift in Sources */,
 				358B3A2E1ED6899E000B410D /* XLsn0wToast.swift in Sources */,
 				358B3A231ED6899E000B410D /* UIWindow+Extension.swift in Sources */,
 				358B3A191ED6899E000B410D /* String+Extension.swift in Sources */,
