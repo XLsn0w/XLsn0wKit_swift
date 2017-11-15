@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		303B02701FBBE9B7000276D3 /* UINavigationBar+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B026F1FBBE9B7000276D3 /* UINavigationBar+extension.swift */; };
+		303B027A1FBBEE6C000276D3 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B02791FBBEE6C000276D3 /* DispatchQueue+Extension.swift */; };
+		303B027C1FBBEE7D000276D3 /* CAEmitterLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B027B1FBBEE7D000276D3 /* CAEmitterLayer+Extension.swift */; };
+		303B027E1FBBEEF0000276D3 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B027D1FBBEEF0000276D3 /* UIButton+Extension.swift */; };
+		303B02861FBBF0B8000276D3 /* FPSIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B02831FBBF0B8000276D3 /* FPSIndicator.swift */; };
 		350C85F51EEA2A3000FED4AB /* XLsn0wRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C85F41EEA2A3000FED4AB /* XLsn0wRequest.swift */; };
 		350C85F81EEA2D9E00FED4AB /* XLsn0wPrivateMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C85F71EEA2D9E00FED4AB /* XLsn0wPrivateMacro.swift */; };
 		353578E51ED9055700B5B51F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353578E41ED9055700B5B51F /* Date+Extension.swift */; };
@@ -44,6 +49,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		303B026F1FBBE9B7000276D3 /* UINavigationBar+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+extension.swift"; sourceTree = "<group>"; };
+		303B02791FBBEE6C000276D3 /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
+		303B027B1FBBEE7D000276D3 /* CAEmitterLayer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAEmitterLayer+Extension.swift"; sourceTree = "<group>"; };
+		303B027D1FBBEEF0000276D3 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		303B02831FBBF0B8000276D3 /* FPSIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSIndicator.swift; sourceTree = "<group>"; };
 		350C85F41EEA2A3000FED4AB /* XLsn0wRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wRequest.swift; sourceTree = "<group>"; };
 		350C85F71EEA2D9E00FED4AB /* XLsn0wPrivateMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wPrivateMacro.swift; sourceTree = "<group>"; };
 		353578E41ED9055700B5B51F /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -96,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		303B02811FBBF0B8000276D3 /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				303B02831FBBF0B8000276D3 /* FPSIndicator.swift */,
+			);
+			path = CustomClass;
+			sourceTree = "<group>";
+		};
 		350C85F61EEA2D9E00FED4AB /* XLsn0wPrivateMacro */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				358B3A021ED6899E000B410D /* XLsn0wKit_swift.podspec */,
+				303B02811FBBF0B8000276D3 /* CustomClass */,
 				350C85F61EEA2D9E00FED4AB /* XLsn0wPrivateMacro */,
 				358B39EF1ED6899E000B410D /* Component */,
 				358B39F31ED6899E000B410D /* Extension */,
@@ -172,8 +191,11 @@
 		358B39F31ED6899E000B410D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				303B027D1FBBEEF0000276D3 /* UIButton+Extension.swift */,
+				303B02791FBBEE6C000276D3 /* DispatchQueue+Extension.swift */,
 				353578EA1ED906CE00B5B51F /* UITableView+Extension.swift */,
 				353578EB1ED906CE00B5B51F /* NSObject+Extension.swift */,
+				303B027B1FBBEE7D000276D3 /* CAEmitterLayer+Extension.swift */,
 				353578E41ED9055700B5B51F /* Date+Extension.swift */,
 				358B39F41ED6899E000B410D /* Array+Extension.swift */,
 				358B39F51ED6899E000B410D /* FileManager+Extension.swift */,
@@ -186,6 +208,7 @@
 				358B39FE1ED6899E000B410D /* UISearchBar+Extension.swift */,
 				358B39FF1ED6899E000B410D /* UIView+Extension.swift */,
 				358B3A011ED6899E000B410D /* UIWindow+Extension.swift */,
+				303B026F1FBBE9B7000276D3 /* UINavigationBar+extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -331,9 +354,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XLsn0w/Pods-XLsn0w-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -346,13 +378,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XLsn0w-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AF4F798E91AA02ED20F9AF54 /* [CP] Copy Pods Resources */ = {
@@ -379,8 +414,10 @@
 			files = (
 				353578ED1ED906CE00B5B51F /* NSObject+Extension.swift in Sources */,
 				358B3A2F1ED6899E000B410D /* XLsn0wViewController.swift in Sources */,
+				303B02701FBBE9B7000276D3 /* UINavigationBar+extension.swift in Sources */,
 				358B3A211ED6899E000B410D /* UIView+Extension.swift in Sources */,
 				358B3A151ED6899E000B410D /* XLsn0wWebViewController.swift in Sources */,
+				303B02861FBBF0B8000276D3 /* FPSIndicator.swift in Sources */,
 				353578E51ED9055700B5B51F /* Date+Extension.swift in Sources */,
 				358B3A2D1ED6899E000B410D /* ToastWindow.swift in Sources */,
 				350C85F51EEA2A3000FED4AB /* XLsn0wRequest.swift in Sources */,
@@ -397,13 +434,16 @@
 				358B3A2A1ED6899E000B410D /* XLsn0wNetwork.swift in Sources */,
 				358B3A2C1ED6899E000B410D /* ToastView.swift in Sources */,
 				358B3A1B1ED6899E000B410D /* UIBarButtonItem+Extension.swift in Sources */,
+				303B027E1FBBEEF0000276D3 /* UIButton+Extension.swift in Sources */,
 				358B3A161ED6899E000B410D /* Array+Extension.swift in Sources */,
 				350C85F81EEA2D9E00FED4AB /* XLsn0wPrivateMacro.swift in Sources */,
 				358B3A2B1ED6899E000B410D /* ToastCenter.swift in Sources */,
 				358B3A1C1ED6899E000B410D /* UIColor+Extension.swift in Sources */,
 				353578EC1ED906CE00B5B51F /* UITableView+Extension.swift in Sources */,
 				358B3A1F1ED6899E000B410D /* UIImage+Extension.swift in Sources */,
+				303B027C1FBBEE7D000276D3 /* CAEmitterLayer+Extension.swift in Sources */,
 				358B3A271ED6899E000B410D /* XLsn0wManager.swift in Sources */,
+				303B027A1FBBEE6C000276D3 /* DispatchQueue+Extension.swift in Sources */,
 				358B3A201ED6899E000B410D /* UISearchBar+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
