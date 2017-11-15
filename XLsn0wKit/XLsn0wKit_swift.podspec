@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.version      = "1.1.2"
+  s.version      = "1.1.1"
 
   s.name         = "XLsn0wKit_swift"
   s.homepage     = "https://github.com/XLsn0w/XLsn0wKit_swift"
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.frameworks            = 'UIKit', 'Foundation'
 
-  s.dependency 'SnapKit'
+# s.dependency 'SnapKit'
   s.dependency 'Kingfisher'
   s.dependency 'Alamofire'
   s.dependency 'SwiftyJSON'
