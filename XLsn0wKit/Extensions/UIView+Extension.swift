@@ -316,7 +316,7 @@ public extension UIView {
         }
     }
     
-    func setTapActionWithBlock(tapBlock:(()->())) {
+    func setTapActionWithBlock(tapBlock:@escaping (()->())) {
         let tapGesture = objc_getAssociatedObject(self, kTapGentureKey)
         if (tapGesture == nil)
         {

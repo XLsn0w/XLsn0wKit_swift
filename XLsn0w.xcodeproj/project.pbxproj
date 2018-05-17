@@ -13,7 +13,7 @@
 		303B027E1FBBEEF0000276D3 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B027D1FBBEEF0000276D3 /* UIButton+Extension.swift */; };
 		303B02861FBBF0B8000276D3 /* FPSIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B02831FBBF0B8000276D3 /* FPSIndicator.swift */; };
 		350C85F51EEA2A3000FED4AB /* XLsn0wRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C85F41EEA2A3000FED4AB /* XLsn0wRequest.swift */; };
-		350C85F81EEA2D9E00FED4AB /* XLsn0wPrivateMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C85F71EEA2D9E00FED4AB /* XLsn0wPrivateMacro.swift */; };
+		350C85F81EEA2D9E00FED4AB /* XLsn0wSwiftMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C85F71EEA2D9E00FED4AB /* XLsn0wSwiftMacro.swift */; };
 		353578E51ED9055700B5B51F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353578E41ED9055700B5B51F /* Date+Extension.swift */; };
 		353578EC1ED906CE00B5B51F /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353578EA1ED906CE00B5B51F /* UITableView+Extension.swift */; };
 		353578ED1ED906CE00B5B51F /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353578EB1ED906CE00B5B51F /* NSObject+Extension.swift */; };
@@ -55,7 +55,7 @@
 		303B027D1FBBEEF0000276D3 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		303B02831FBBF0B8000276D3 /* FPSIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSIndicator.swift; sourceTree = "<group>"; };
 		350C85F41EEA2A3000FED4AB /* XLsn0wRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wRequest.swift; sourceTree = "<group>"; };
-		350C85F71EEA2D9E00FED4AB /* XLsn0wPrivateMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wPrivateMacro.swift; sourceTree = "<group>"; };
+		350C85F71EEA2D9E00FED4AB /* XLsn0wSwiftMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wSwiftMacro.swift; sourceTree = "<group>"; };
 		353578E41ED9055700B5B51F /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		353578EA1ED906CE00B5B51F /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		353578EB1ED906CE00B5B51F /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
@@ -106,20 +106,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		303B02811FBBF0B8000276D3 /* CustomClass */ = {
+		303B02811FBBF0B8000276D3 /* FPSIndicator */ = {
 			isa = PBXGroup;
 			children = (
 				303B02831FBBF0B8000276D3 /* FPSIndicator.swift */,
 			);
-			path = CustomClass;
+			path = FPSIndicator;
 			sourceTree = "<group>";
 		};
-		350C85F61EEA2D9E00FED4AB /* XLsn0wPrivateMacro */ = {
+		350C85F61EEA2D9E00FED4AB /* XLsn0wSwiftMacro */ = {
 			isa = PBXGroup;
 			children = (
-				350C85F71EEA2D9E00FED4AB /* XLsn0wPrivateMacro.swift */,
+				350C85F71EEA2D9E00FED4AB /* XLsn0wSwiftMacro.swift */,
 			);
-			path = XLsn0wPrivateMacro;
+			path = XLsn0wSwiftMacro;
 			sourceTree = "<group>";
 		};
 		358B39D01ED68997000B410D = {
@@ -158,11 +158,10 @@
 			isa = PBXGroup;
 			children = (
 				358B3A021ED6899E000B410D /* XLsn0wKit_swift.podspec */,
-				303B02811FBBF0B8000276D3 /* CustomClass */,
-				350C85F61EEA2D9E00FED4AB /* XLsn0wPrivateMacro */,
-				358B39EF1ED6899E000B410D /* Component */,
-				358B39F31ED6899E000B410D /* Extension */,
 				358B3A031ED6899E000B410D /* XLsn0wLog */,
+				350C85F61EEA2D9E00FED4AB /* XLsn0wSwiftMacro */,
+				358B39F31ED6899E000B410D /* Extensions */,
+				358B39EF1ED6899E000B410D /* Components */,
 				358B3A071ED6899E000B410D /* XLsn0wManager */,
 				358B3A091ED6899E000B410D /* XLsn0wNetwork */,
 				358B3A0D1ED6899E000B410D /* XLsn0wToast */,
@@ -171,12 +170,13 @@
 			path = XLsn0wKit;
 			sourceTree = "<group>";
 		};
-		358B39EF1ED6899E000B410D /* Component */ = {
+		358B39EF1ED6899E000B410D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				303B02811FBBF0B8000276D3 /* FPSIndicator */,
 				358B39F01ED6899E000B410D /* WebViewController */,
 			);
-			path = Component;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		358B39F01ED6899E000B410D /* WebViewController */ = {
@@ -188,7 +188,7 @@
 			path = WebViewController;
 			sourceTree = "<group>";
 		};
-		358B39F31ED6899E000B410D /* Extension */ = {
+		358B39F31ED6899E000B410D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				303B027D1FBBEEF0000276D3 /* UIButton+Extension.swift */,
@@ -210,7 +210,7 @@
 				358B3A011ED6899E000B410D /* UIWindow+Extension.swift */,
 				303B026F1FBBE9B7000276D3 /* UINavigationBar+extension.swift */,
 			);
-			path = Extension;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		358B3A031ED6899E000B410D /* XLsn0wLog */ = {
@@ -436,7 +436,7 @@
 				358B3A1B1ED6899E000B410D /* UIBarButtonItem+Extension.swift in Sources */,
 				303B027E1FBBEEF0000276D3 /* UIButton+Extension.swift in Sources */,
 				358B3A161ED6899E000B410D /* Array+Extension.swift in Sources */,
-				350C85F81EEA2D9E00FED4AB /* XLsn0wPrivateMacro.swift in Sources */,
+				350C85F81EEA2D9E00FED4AB /* XLsn0wSwiftMacro.swift in Sources */,
 				358B3A2B1ED6899E000B410D /* ToastCenter.swift in Sources */,
 				358B3A1C1ED6899E000B410D /* UIColor+Extension.swift in Sources */,
 				353578EC1ED906CE00B5B51F /* UITableView+Extension.swift in Sources */,

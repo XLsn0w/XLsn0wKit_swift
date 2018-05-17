@@ -11,7 +11,7 @@ import UIKit
  *3. iPhone 6 Plus 5.5   分辨率: 414x736，像素1242x2208，@3x
  
  *4. 屏幕比率 以 iPhone 6 为基准
- *5. #define kFitWidth  ([UIScreen mainScreen].bounds.size.width / 375)
+ *5. #define kFitWidth  ([UIScreen mainScreen].bounds.size.width  / 375)
  *6. #define kFitHeight ([UIScreen mainScreen].bounds.size.height / 667)
  
 */
