@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
 
   s.name         = "XLsn0wKit_swift"
   s.homepage     = "https://github.com/XLsn0w/XLsn0wKit_swift"
@@ -15,7 +15,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = "XLsn0wKit/**/*.swift"
-
 
 # s.resources             = "XLsn0w/Resources/XLsn0wKit.bundle"
 # s.libraries             = 'z', 'sqlite3'
