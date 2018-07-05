@@ -26,7 +26,7 @@ public extension NSObject{
                     
                     if "description" == propertyKey{ continue }   //描述，不是属性
                     
-                    let tempValue:AnyObject!  = self.value(forKey: propertyKey) as AnyObject!
+                    let tempValue:AnyObject!  = self.value(forKey: propertyKey) as AnyObject?
                     if  tempValue == nil { continue }
                     
                     if let _ =  HEFoundation.getType(propertyType) {         //1,自定义的类
@@ -109,7 +109,7 @@ public class HEFoundation {
         if let range = code.range(of: bundlePath){
             code = code.substring(from: range.upperBound)
             var numStr = "" //类名前面的数字
-            for c:Character in code.characters{
+            for c:Character in code{
                 if c <= "9" && c >= "0"{
                     numStr+=String(c)
                 }

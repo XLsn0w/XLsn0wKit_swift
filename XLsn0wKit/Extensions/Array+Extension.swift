@@ -20,3 +20,12 @@ public extension Array {
         }
     }
 }
+
+
+extension Array where Element: NSObject {
+    mutating func remove(object: Element) {
+        if let index = self.index(of: object) {
+            self.remove(at: index)
+        }
+    }
+}

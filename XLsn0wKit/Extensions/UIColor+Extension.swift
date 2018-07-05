@@ -44,7 +44,7 @@ extension UIColor {
         let set = NSCharacterSet()
         var strCo = color.trimmingCharacters(in: set as CharacterSet).uppercased()
         
-        if strCo.characters.count != 7 {
+        if strCo.count != 7 {
             return self.clear
         }
         
@@ -143,7 +143,7 @@ extension UIColor {
     //颜色转换
     convenience init?(colorHexString : String) {
         //1.判断字符串长度是否大于6
-        guard colorHexString.characters.count >= 6 else {
+        guard colorHexString.count >= 6 else {
             return nil
         }
         //2.将字符串转化为大写

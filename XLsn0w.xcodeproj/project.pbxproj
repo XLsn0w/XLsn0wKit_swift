@@ -46,6 +46,7 @@
 		358B3A2E1ED6899E000B410D /* XLsn0wToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B3A111ED6899E000B410D /* XLsn0wToast.swift */; };
 		358B3A2F1ED6899E000B410D /* XLsn0wViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B3A131ED6899E000B410D /* XLsn0wViewController.swift */; };
 		64B3BC233211ADAC7F856E51 /* Pods_XLsn0w.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C42A2FA322008B4E106CC06 /* Pods_XLsn0w.framework */; };
+		662EF17C20EDAD3A00EB1557 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EF17B20EDAD3A00EB1557 /* UIFont+Extension.swift */; };
 		CDC9C46820AD724300C63B29 /* XLsn0wSwiftLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9C46720AD724300C63B29 /* XLsn0wSwiftLoop.swift */; };
 		CDC9C46A20AD7B0F00C63B29 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDC9C46920AD7B0F00C63B29 /* 1.jpg */; };
 		CDC9C46C20AD7B1200C63B29 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDC9C46B20AD7B1200C63B29 /* 2.jpg */; };
@@ -93,6 +94,7 @@
 		358B3A101ED6899E000B410D /* ToastWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastWindow.swift; sourceTree = "<group>"; };
 		358B3A111ED6899E000B410D /* XLsn0wToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wToast.swift; sourceTree = "<group>"; };
 		358B3A131ED6899E000B410D /* XLsn0wViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wViewController.swift; sourceTree = "<group>"; };
+		662EF17B20EDAD3A00EB1557 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		6B1D864C79F99A9A2DD314BE /* Pods-XLsn0w.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0w.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0w/Pods-XLsn0w.debug.xcconfig"; sourceTree = "<group>"; };
 		9C42A2FA322008B4E106CC06 /* Pods_XLsn0w.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLsn0w.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC9C46720AD724300C63B29 /* XLsn0wSwiftLoop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wSwiftLoop.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 		358B39F31ED6899E000B410D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				662EF17B20EDAD3A00EB1557 /* UIFont+Extension.swift */,
 				303B027D1FBBEEF0000276D3 /* UIButton+Extension.swift */,
 				303B02791FBBEE6C000276D3 /* DispatchQueue+Extension.swift */,
 				353578EA1ED906CE00B5B51F /* UITableView+Extension.swift */,
@@ -333,7 +336,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = XLsn0w;
 				TargetAttributes = {
 					358B39D81ED68997000B410D = {
@@ -471,6 +474,7 @@
 				350C85F81EEA2D9E00FED4AB /* XLsn0wSwiftMacro.swift in Sources */,
 				358B3A2B1ED6899E000B410D /* ToastCenter.swift in Sources */,
 				358B3A1C1ED6899E000B410D /* UIColor+Extension.swift in Sources */,
+				662EF17C20EDAD3A00EB1557 /* UIFont+Extension.swift in Sources */,
 				353578EC1ED906CE00B5B51F /* UITableView+Extension.swift in Sources */,
 				358B3A1F1ED6899E000B410D /* UIImage+Extension.swift in Sources */,
 				303B027C1FBBEE7D000276D3 /* CAEmitterLayer+Extension.swift in Sources */,
@@ -512,15 +516,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -562,15 +574,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

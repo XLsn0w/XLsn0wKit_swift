@@ -42,12 +42,19 @@ func getMaxYOfView(_ view: UIView) -> CGFloat{
 func get_PI() -> CGFloat {
     return CGFloat(Double.pi)
 }
+
+let colorStart = UIColor(red:0.1 , green: 0.2, blue: 0.5, alpha: 1.0)
+let colorEnd = UIColor(red:0.21 , green: 0.32, blue: 0.15, alpha: 1.0)
+
 func getColor_RGB_Float(r:Float,g:Float,b:Float) -> UIColor {
-    return UIColor.init(colorLiteralRed: r, green: g, blue: b, alpha: 1.0)
+    let color = UIColor(red: CGFloat(r), green: CGFloat(g), blue: CGFloat(b), alpha: 1.0)
+    return color
 }
+
 func getColor_RGB(r:Float,g:Float,b:Float) -> UIColor {
-    return UIColor.init(colorLiteralRed: r/255.0, green: g/255.0, blue: b/255.0, alpha: 1.0)
+    return UIColor(red: CGFloat(r/255.0), green: CGFloat(g/255.0), blue: CGFloat(b/255.0), alpha: 1.0)
 }
+
 /*********************************************************************************************
  *   __      __   _         _________     _ _     _    _________   __         _         __   *
  *	 \ \    / /  | |        | _______|   | | \   | |  |  ______ |  \ \       / \       / /   *
