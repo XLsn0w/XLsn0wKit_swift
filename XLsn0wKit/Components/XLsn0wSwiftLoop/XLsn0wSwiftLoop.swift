@@ -33,7 +33,7 @@ class XLsn0wSwiftLoop: UIView {
         }
     }
 /// pageView当前点的颜色
-    var cuttentPageColor:UIColor = UIColor.blue{
+    var cuttentPageColor:UIColor = UIColor.blue {
         didSet{
             pageView.currentPageIndicatorTintColor = cuttentPageColor
         }

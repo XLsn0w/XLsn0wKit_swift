@@ -13,6 +13,12 @@ import UIKit
 
 class XLsn0wManager: NSObject {
 
+    /// 单例的写法，其实就是一个静态闭包立即执行的结果
+    static let shared : XLsn0wManager = {
+        let shared = XLsn0wManager()
+        return shared
+    }()
+
     
     // 推荐的单例写法 
     // XLsn0wManager.defaultManager
@@ -31,7 +37,19 @@ class XLsn0wManager: NSObject {
        
     }
     
-    
+    //MARK: - 延迟执行的全局的方法
+    /// 延迟执行的方法
+    ///
+    /// - Parameters:
+    ///   - seconds: 秒数
+    ///   - afterToDo: 需要延迟执行的闭包(就是需要延迟执行的那件事)
+    func after(_ seconds: Int, _ afterToDo: @escaping ()->()) {
+        let deadlineTime = DispatchTime.now() + .seconds(seconds)
+        DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
+            afterToDo()
+        }
+    }
+
     
     
 }

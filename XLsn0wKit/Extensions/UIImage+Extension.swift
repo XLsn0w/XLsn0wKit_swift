@@ -317,3 +317,204 @@ extension UIImage {
     }
     
 }
+
+extension UIImage {
+    
+    var opaque: Bool {
+        get {
+            let alphaInfo = self.cgImage?.alphaInfo
+            let opaque = alphaInfo == .noneSkipLast ||
+                alphaInfo == .noneSkipFirst ||
+                alphaInfo == .none
+            return opaque
+        }
+    }
+    
+    func resizeWidth(to width: CGFloat) -> UIImage? {
+        let height = self.size.height * width / self.size.width
+        return self._resize(to: CGSize(width: width, height: height))
+    }
+    
+    func resizeHeight(to height: CGFloat) -> UIImage? {
+        let width = self.size.width * height / self.size.height
+        return self._resize(to: CGSize(width: width, height: height))
+    }
+    
+    func resize(to maxWidthOrHeight: CGFloat) -> UIImage? {
+        if maxWidthOrHeight < self.size.width && maxWidthOrHeight < self.size.height {
+            return self
+        } else if self.size.width > self.size.height {
+            return self.resizeWidth(to: maxWidthOrHeight)
+        } else if self.size.width < self.size.height {
+            return self.resizeHeight(to: maxWidthOrHeight)
+        } else {
+            return self._resize(to: CGSize(width: maxWidthOrHeight, height: maxWidthOrHeight))
+        }
+    }
+    
+    func _resize(to size: CGSize) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(size, self.opaque, self.scale)
+        self.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+    
+    func cropping(in rect: CGRect) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(rect.size, self.opaque, self.scale)
+        self.draw(in: CGRect(x: -rect.origin.x, y: -rect.origin.y, width: self.size.width, height: self.size.height))
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+    
+    func jpegData(with compressionQuality: CGFloat) -> Data? {
+        return UIImageJPEGRepresentation(self, compressionQuality)
+    }
+    
+    func pngData() -> Data? {
+        return UIImagePNGRepresentation(self)
+    }
+    
+    func xl_image(withTintColor color: UIColor) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(self.size, self.opaque, self.scale)
+        guard let context = UIGraphicsGetCurrentContext() else {
+            return nil
+        }
+        let rect = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height)
+        context.translateBy(x: 0, y: self.size.height)
+        context.scaleBy(x: 1.0, y: -1.0)
+        context.setBlendMode(.normal)
+        context.clip(to: rect, mask: self.cgImage!)
+        context.setFillColor(color.cgColor)
+        context.fill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+    
+    func image(withBlendColor color: UIColor) -> UIImage? {
+        guard let coloredImage = self.xl_image(withTintColor: color) else {
+            return nil
+        }
+        let filter = CIFilter(name: "CIColorBlendMode")
+        filter?.setValue(self.ciImage, forKey: kCIInputBackgroundImageKey)
+        filter?.setValue(CIImage(cgImage: coloredImage.cgImage!), forKey: kCIInputImageKey)
+        guard let outputImage = filter?.outputImage else {
+            return nil
+        }
+        let context = CIContext(options: nil)
+        guard let cgImage = context.createCGImage(outputImage, from: outputImage.extent) else {
+            return nil
+        }
+        let image = UIImage(cgImage: cgImage, scale: self.scale, orientation: self.imageOrientation)
+        return image
+    }
+}
+
+
+extension UIImage {
+    
+    /// 绘制tabBar上面那根线的效果
+    ///
+    /// - Parameters:
+    ///   - color: 颜色
+    ///   - size: 绘制的大小
+    /// - Returns: image
+    class func cl_pureImage(color: UIColor = UIColor.white,
+                            size: CGSize = CGSize(width: 1,
+                                                  height: 1)) -> UIImage? {
+        
+        //开始图形上下文
+        UIGraphicsBeginImageContext(size)
+        //设置颜色
+        color.setFill()
+        //颜色填充
+        UIRectFill(CGRect(origin: CGPoint.zero, size: size))
+        //图形上下文获取图片
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        
+        //关闭上下文
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
+    
+    /// 把图片画成圆形,绘制,对性能更好
+    ///
+    /// - Parameters:
+    ///   - color: 颜色
+    ///   - size: 大小
+    ///   - callBack: 回调
+    func cl_createCircleImage(color: UIColor = UIColor.white, size: CGSize = CGSize(width: 1, height: 1), callBack:@escaping (UIImage?)->()) {
+        
+        DispatchQueue.global().async {
+            let rect = CGRect(origin: CGPoint.zero, size: size)
+            
+            //1. 开始图形上下文
+            UIGraphicsBeginImageContext(size)
+            
+            //2. 设置颜色
+            color.setFill()
+            
+            //3. 颜色填充
+            UIRectFill(rect)
+            
+            //圆形裁切
+            let path = UIBezierPath(ovalIn: rect)
+            path.addClip()
+            
+            self.draw(in: rect)
+            
+            //4. 从图形上下文获取图片
+            let image = UIGraphicsGetImageFromCurrentImageContext()
+            
+            //5. 关闭图形上下文
+            UIGraphicsEndImageContext()
+            
+            //在主线程更新UI
+            DispatchQueue.main.async {
+                callBack(image)
+            }
+        }
+        
+    }
+    
+    /// 绘制一张图片，可以解决内存暴涨，并且保持相对较好的质量
+    ///
+    /// - Parameters:
+    ///   - color: color
+    ///   - size: size
+    ///   - callBack: callBack
+    func cl_resizeImage(color: UIColor = UIColor.white, size: CGSize = CGSize(width: 1, height: 1), callBack:@escaping (UIImage?)->()) {
+        
+        DispatchQueue.global().async {
+            let rect = CGRect(origin: CGPoint.zero, size: size)
+            
+            //1. 开始图形上下文
+            UIGraphicsBeginImageContext(size)
+            
+            //2. 设置颜色
+            color.setFill()
+            
+            //3. 颜色填充
+            UIRectFill(rect)
+            
+            self.draw(in: rect)
+            
+            //4. 从图形上下文获取图片
+            let image = UIGraphicsGetImageFromCurrentImageContext()
+            
+            //5. 关闭图形上下文
+            UIGraphicsEndImageContext()
+            
+            //在主线程更新UI
+            DispatchQueue.main.async {
+                callBack(image)
+            }
+        }
+    }
+    
+    
+}
+
